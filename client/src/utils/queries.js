@@ -14,3 +14,16 @@ export const QUERY_USER = gql`
     }
   }
 `;
+export const QUERY_CHARACTER = gql`
+  query character($name: String!) {
+    character(name: $name) {
+      _id
+      name
+      picture
+      gender
+      species
+      weapon
+      forceSensative
+    }
+  }
+`;

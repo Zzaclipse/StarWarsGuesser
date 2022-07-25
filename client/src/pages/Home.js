@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useQuery } from "@apollo/client";
 import styled from "styled-components";
 import Table from "../components/Table";
+// import AddGuess from "../utils/addGuess";
+import { QUERY_CHARACTER } from "../utils/queries";
 
 const Testdata = [
   {
@@ -78,16 +80,24 @@ const Testdata = [
 ];
 
 const Home = () => {
-  let [guessedName, setGuessedName] = useState("xxxxxxx");
+  let [guessedName, setGuessedName] = useState("GUESSNAME INITIAL STATE");
   let [amountOfGuesses, setAmountOfGuesses] = useState(0);
+  let [guessArray, setGuessArray] = useState([]);
+  let [singleGuessObj, setSingleGuessObj] = useState({});
+
   const guessedChange = (e) => {
     setGuessedName(e.target.value);
-    console.log(guessedName);
+    console.log("GUESSEDNAME:", guessedName);
   };
 
   const guessButtonClick = (e) => {
+    console.log("guessButtonClick GUESSEDNAME:", guessedName);
     let newAmount = amountOfGuesses + 1;
     setAmountOfGuesses(newAmount);
+    // const charObj = useQuery(QUERY_CHARACTER, {
+    //   variables: { name: guessedName },
+    // });
+    // console.log("QUERYCHAR", charObj);
   };
 
   return (
@@ -103,7 +113,15 @@ const Home = () => {
       <button id="guessButton" type="button" onClick={guessButtonClick}>
         Guess
       </button>
-      {amountOfGuesses ? <Table props={Testdata} /> : ""}
+      {amountOfGuesses ? (
+        <Table
+          props1={guessArray}
+          props2={guessedName}
+          props3={setGuessArray}
+        />
+      ) : (
+        ""
+      )}
     </div>
   );
 };

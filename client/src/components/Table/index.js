@@ -1,6 +1,7 @@
 import React from "react";
 import { useQuery } from "@apollo/client";
 import styled from "styled-components";
+import { QUERY_CHARACTER } from "../../utils/queries";
 
 const RedBackground = styled.div`
   background-color: red;
@@ -10,8 +11,16 @@ const GreenBackground = styled.div`
   background-color: green;
 `;
 
-const Table = ({ props }) => {
-  console.log(props);
+const Table = ({ props1, props2, props3 }) => {
+  const charObj = useQuery(QUERY_CHARACTER, {
+    variables: { name: props2 },
+  });
+  console.log(props1);
+  console.log(props2);
+  console.log(charObj.data.character);
+
+  props3([...props1, charObj]);
+
   return (
     <div>
       <table>
@@ -22,10 +31,10 @@ const Table = ({ props }) => {
           <th>Weapon</th>
           <th>Force Sensative</th>
         </tr>
-        {props.map((val, key) => {
+        {props1.map((val) => {
           return (
-            <tr key={key}>
-              <td>{val.pic}</td>
+            <tr>
+              <td>{val.picture}</td>
               <td>{val.gender}</td>
               <td>{val.species}</td>
               <td>{val.weapon}</td>

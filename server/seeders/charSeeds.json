@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Darth Vader",
+    "picture": "Placeholder(Darth Vader)",
+    "gender": "Male",
+    "species": "Cyborg",
+    "weapon": "Lightsaber",
+    "forceSensative": "True"
+  },
+  {
+    "name": "Luke Skywalker",
+    "picture": "Placeholder(Luke Skywalker)",
+    "gender": "Male",
+    "species": "Human",
+    "weapon": "Lightsaber",
+    "forceSensative": "True"
+  },
+  {
+    "name": "Jabba the Hutt",
+    "picture": "Placeholder(Jabba the Hutt)",
+    "gender": "Male",
+    "species": "Hutt",
+    "weapon": "None",
+    "forceSensative": "False"
+  }
+]
