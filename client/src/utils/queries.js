@@ -27,3 +27,17 @@ export const QUERY_CHARACTER = gql`
     }
   }
 `;
+
+export const QUERY_CHARACTERS = gql`
+  query characters {
+    characters {
+      _id
+      name
+      picture
+      gender
+      species
+      weapon
+      forceSensative
+    }
+  }
+`;

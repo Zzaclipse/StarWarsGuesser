@@ -11,15 +11,18 @@ const GreenBackground = styled.div`
   background-color: green;
 `;
 
-const Table = ({ props1, props2, props3 }) => {
-  const charObj = useQuery(QUERY_CHARACTER, {
+const Table = ({ props1, props2 }) => {
+  const { loading, data } = useQuery(QUERY_CHARACTER, {
     variables: { name: props2 },
   });
-  console.log(props1);
-  console.log(props2);
-  console.log(charObj.data.character);
+  console.log("props1", props1);
+  console.log("props2", props2);
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+  console.log(data.character);
 
-  props3([...props1, charObj]);
+  // props3([...props1, data]);
 
   return (
     <div>

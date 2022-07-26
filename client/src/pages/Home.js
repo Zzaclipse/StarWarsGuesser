@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Table from "../components/Table";
 // import AddGuess from "../utils/addGuess";
 import { QUERY_CHARACTER } from "../utils/queries";
+import { useCharContext } from "../utils/CharContext";
 
 const Testdata = [
   {
@@ -27,63 +28,13 @@ const Testdata = [
     weapon: "None",
     forceSensative: "False",
   },
-  {
-    pic: "Placeholder(Jabba the Hutt)",
-    gender: "Male",
-    species: "Hutt",
-    weapon: "None",
-    forceSensative: "False",
-  },
-  {
-    pic: "Placeholder(Jabba the Hutt)",
-    gender: "Male",
-    species: "Hutt",
-    weapon: "None",
-    forceSensative: "False",
-  },
-  {
-    pic: "Placeholder(Jabba the Hutt)",
-    gender: "Male",
-    species: "Hutt",
-    weapon: "None",
-    forceSensative: "False",
-  },
-
-  {
-    pic: "Placeholder(Jabba the Hutt)",
-    gender: "Male",
-    species: "Hutt",
-    weapon: "None",
-    forceSensative: "False",
-  },
-  {
-    pic: "Placeholder(Jabba the Hutt)",
-    gender: "Male",
-    species: "Hutt",
-    weapon: "None",
-    forceSensative: "False",
-  },
-  {
-    pic: "Placeholder(Jabba the Hutt)",
-    gender: "Male",
-    species: "Hutt",
-    weapon: "None",
-    forceSensative: "False",
-  },
-  {
-    pic: "Placeholder(Jabba the Hutt)",
-    gender: "Male",
-    species: "Hutt",
-    weapon: "None",
-    forceSensative: "False",
-  },
 ];
 
 const Home = () => {
+  let { guessArray, setGuessArray } = useState([]);
+
   let [guessedName, setGuessedName] = useState("GUESSNAME INITIAL STATE");
   let [amountOfGuesses, setAmountOfGuesses] = useState(0);
-  let [guessArray, setGuessArray] = useState([]);
-  let [singleGuessObj, setSingleGuessObj] = useState({});
 
   const guessedChange = (e) => {
     setGuessedName(e.target.value);
@@ -94,10 +45,6 @@ const Home = () => {
     console.log("guessButtonClick GUESSEDNAME:", guessedName);
     let newAmount = amountOfGuesses + 1;
     setAmountOfGuesses(newAmount);
-    // const charObj = useQuery(QUERY_CHARACTER, {
-    //   variables: { name: guessedName },
-    // });
-    // console.log("QUERYCHAR", charObj);
   };
 
   return (
@@ -113,12 +60,29 @@ const Home = () => {
       <button id="guessButton" type="button" onClick={guessButtonClick}>
         Guess
       </button>
-      {amountOfGuesses ? (
-        <Table
-          props1={guessArray}
-          props2={guessedName}
-          props3={setGuessArray}
-        />
+      {amountOfGuesses >= 1 ? (
+        <div>
+          <table>
+            <tr>
+              <th>Pic</th>
+              <th>Gender</th>
+              <th>Species</th>
+              <th>Weapon</th>
+              <th>Force Sensative</th>
+            </tr>
+            {guessArray.map((val) => {
+              return (
+                <tr>
+                  <td>{val.picture}</td>
+                  <td>{val.gender}</td>
+                  <td>{val.species}</td>
+                  <td>{val.weapon}</td>
+                  <td>{val.forceSensative}</td>
+                </tr>
+              );
+            })}
+          </table>
+        </div>
       ) : (
         ""
       )}
