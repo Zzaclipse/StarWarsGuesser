@@ -53,4 +53,4 @@ This application is licened under ISC License
 
 ## Screenshot
 
-![screenshot](./img/Capture.jpg)
+![screenshot](./client/img/Capture.jpg)
