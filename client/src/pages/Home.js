@@ -87,6 +87,11 @@ const Home = () => {
       >
         Play Again
       </button>
+      <br></br>
+      <br></br>
+      <br></br>
+
+      <img src="https://bibliosanctumblog.files.wordpress.com/2016/02/tumblr_n0r0a8p8rk1ts4ubeo1_500.gif?w=510&zoom=2" />
     </div>
   ) : (
     <div class="align-center">
