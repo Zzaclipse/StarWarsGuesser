@@ -25,7 +25,17 @@ const characterSchema = new Schema({
     required: true,
     trim: true,
   },
-  forceSensative: {
+  forceSensitive: {
+    type: String,
+    required: true,
+    trim: true,
+  },
+  birthPlanet: {
+    type: String,
+    required: true,
+    trim: true,
+  },
+  lsds: {
     type: String,
     required: true,
     trim: true,

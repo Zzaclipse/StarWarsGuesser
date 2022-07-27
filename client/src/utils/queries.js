@@ -23,7 +23,9 @@ export const QUERY_CHARACTER = gql`
       gender
       species
       weapon
-      forceSensative
+      forceSensitive
+      birthPlanet
+      lsds
     }
   }
 `;
@@ -37,7 +39,9 @@ export const QUERY_CHARACTERS = gql`
       gender
       species
       weapon
-      forceSensative
+      forceSensitive
+      birthPlanet
+      lsds
     }
   }
 `;

@@ -1,26 +1,295 @@
 [
   {
     "name": "Darth Vader",
-    "picture": "Placeholder(Darth Vader)",
+    "picture": "https://wiki.swgoh.help/images/0/00/Unit-Character-Darth_Vader-portrait.png",
     "gender": "Male",
     "species": "Cyborg",
     "weapon": "Lightsaber",
-    "forceSensative": "True"
+    "forceSensitive": "True",
+    "birthPlanet": "Tatooine",
+    "lsds": "Darkside"
   },
   {
-    "name": "Luke Skywalker",
-    "picture": "Placeholder(Luke Skywalker)",
+    "name": "Anakin Skywalker",
+    "picture": "https://wiki.swgoh.help/images/7/78/Unit-Character-General_Skywalker-portrait.png",
     "gender": "Male",
     "species": "Human",
     "weapon": "Lightsaber",
-    "forceSensative": "True"
+    "forceSensitive": "True",
+    "birthPlanet": "Tatooine",
+    "lsds": "Lightside"
   },
   {
-    "name": "Jabba the Hutt",
-    "picture": "Placeholder(Jabba the Hutt)",
+    "name": "Luke Skywalker",
+    "picture": "https://wiki.swgoh.help/images/0/03/Unit-Character-Jedi_Knight_Luke_Skywalker-portrait.png",
     "gender": "Male",
-    "species": "Hutt",
+    "species": "Human",
+    "weapon": "Lightsaber",
+    "forceSensitive": "True",
+    "birthPlanet": "Polis Massa",
+    "lsds": "Lightside"
+  },
+  {
+    "name": "Obi-Wan Kenobi",
+    "picture": "https://wiki.swgoh.help/images/2/2b/Unit-Character-Jedi_Master_Kenobi-portrait.png",
+    "gender": "Male",
+    "species": "Human",
+    "weapon": "Lightsaber",
+    "forceSensitive": "True",
+    "birthPlanet": "Stewjon",
+    "lsds": "Lightside"
+  },
+  {
+    "name": "Leia Organa",
+    "picture": "https://wiki.swgoh.help/images/e/e1/Unit-Character-Princess_Leia-portrait.png",
+    "gender": "Female",
+    "species": "Human",
+    "weapon": "Blaster/Lightsaber",
+    "forceSensitive": "True",
+    "birthPlanet": "Polis Massa",
+    "lsds": "Lightside"
+  },
+  {
+    "name": "Qui-Gon Jinn",
+    "picture": "https://wiki.swgoh.help/images/a/a2/Unit-Character-Qui-Gon_Jinn-portrait.png",
+    "gender": "Male",
+    "species": "Human",
+    "weapon": "Lightsaber",
+    "forceSensitive": "True",
+    "birthPlanet": "Coruscant",
+    "lsds": "Lightside"
+  },
+  {
+    "name": "Darth Maul",
+    "picture": "https://wiki.swgoh.help/images/e/eb/Unit-Character-Maul-portrait.png",
+    "gender": "Male",
+    "species": "Zabrak",
+    "weapon": "Double-Bladed Lightsaber",
+    "forceSensitive": "True",
+    "birthPlanet": "Dathomir",
+    "lsds": "Darkside"
+  },
+  {
+    "name": "Count Dooku",
+    "picture": "https://wiki.swgoh.help/images/d/d5/Unit-Character-Count_Dooku-portrait.png",
+    "gender": "Male",
+    "species": "Human",
+    "weapon": "Lightsaber",
+    "forceSensitive": "True",
+    "birthPlanet": "Serenno",
+    "lsds": "Darkside"
+  },
+  {
+    "name": "Darth Sidious",
+    "picture": "https://wiki.swgoh.help/images/d/d9/Unit-Character-Emperor_Palpatine-portrait.png",
+    "gender": "Male",
+    "species": "Human",
+    "weapon": "Lightsaber",
+    "forceSensitive": "True",
+    "birthPlanet": "Naboo",
+    "lsds": "Darkside"
+  },
+  {
+    "name": "Yoda",
+    "picture": "https://wiki.swgoh.help/images/5/5a/Unit-Character-Grand_Master_Yoda-portrait.png",
+    "gender": "Male",
+    "species": "Unknown",
+    "weapon": "Lightsaber",
+    "forceSensitive": "True",
+    "birthPlanet": "Unknown",
+    "lsds": "Lightside"
+  },
+  {
+    "name": "Captain Rex",
+    "picture": "https://wiki.swgoh.help/images/6/6e/Unit-Character-CT-7567_%22Rex%22-portrait.png",
+    "gender": "Male",
+    "species": "Human/Clone",
+    "weapon": "Blaster",
+    "forceSensitive": "False",
+    "birthPlanet": "Kamino",
+    "lsds": "Lightside"
+  },
+  {
+    "name": "Commander Cody",
+    "picture": "https://wiki.swgoh.help/images/a/a3/Unit-Character-CC-2224_%22Cody%22-portrait.png",
+    "gender": "Male",
+    "species": "Human/Clone",
+    "weapon": "Blaster",
+    "forceSensitive": "False",
+    "birthPlanet": "Kamino",
+    "lsds": "Lightside/Darkside"
+  },
+  {
+    "name": "Rey",
+    "picture": "https://wiki.swgoh.help/images/e/e5/Unit-Character-Rey_%28Jedi_Training%29-portrait.png",
+    "gender": "Female",
+    "species": "Human",
+    "weapon": "Lightsaber",
+    "forceSensitive": "True",
+    "birthPlanet": "Hyperkarn",
+    "lsds": "Lightside"
+  },
+  {
+    "name": "Han Solo",
+    "picture": "https://wiki.swgoh.help/images/8/82/Unit-Character-Han_Solo-portrait.png",
+    "gender": "Male",
+    "species": "Human",
+    "weapon": "Blaster",
+    "forceSensitive": "False",
+    "birthPlanet": "Corelia",
+    "lsds": "Lightside"
+  },
+  {
+    "name": "Chewbacca",
+    "picture": "https://wiki.swgoh.help/images/0/03/Unit-Character-Clone_Wars_Chewbacca-portrait.png",
+    "gender": "Male",
+    "species": "Wookie",
+    "weapon": "Blaster",
+    "forceSensitive": "False",
+    "birthPlanet": "Kashyyyk",
+    "lsds": "Lightside"
+  },
+  {
+    "name": "Kylo Ren",
+    "picture": "https://wiki.swgoh.help/images/1/1f/Unit-Character-Kylo_Ren-portrait.png",
+    "gender": "Male",
+    "species": "Human",
+    "weapon": "Lightsaber",
+    "forceSensitive": "True",
+    "birthPlanet": "Chandrila",
+    "lsds": "Darkside"
+  },
+  {
+    "name": "Ahsoka Tano",
+    "picture": "https://wiki.swgoh.help/images/6/6f/Unit-Character-Ahsoka_Tano_%28Fulcrum%29-portrait.png",
+    "gender": "Female",
+    "species": "Togruta",
+    "weapon": "Two Lightsabers",
+    "forceSensitive": "True",
+    "birthPlanet": "Shili",
+    "lsds": "Lightside"
+  },
+  {
+    "name": "Finn",
+    "picture": "https://wiki.swgoh.help/images/e/e0/Unit-Character-Resistance_Hero_Finn-portrait.png",
+    "gender": "Male",
+    "species": "Human",
+    "weapon": "Blaster/Lightsaber",
+    "forceSensitive": "False",
+    "birthPlanet": "Unknown",
+    "lsds": "Lightside"
+  },
+  {
+    "name": "Poe Dameron",
+    "picture": "https://wiki.swgoh.help/images/8/83/Unit-Character-Poe_Dameron-portrait.png",
+    "gender": "Male",
+    "species": "Human",
+    "weapon": "Blaster",
+    "forceSensitive": "False",
+    "birthPlanet": "Yavin 4",
+    "lsds": "Lightside"
+  },
+  {
+    "name": "R2-D2",
+    "picture": "https://wiki.swgoh.help/images/3/32/Unit-Character-R2-D2-portrait.png",
+    "gender": "N/A",
+    "species": "Droid",
+    "weapon": "Electro-shock prod",
+    "forceSensitive": "False",
+    "birthPlanet": "Naboo",
+    "lsds": "Lightside"
+  },
+  {
+    "name": "C-3PO",
+    "picture": "https://wiki.swgoh.help/images/f/fc/Unit-Character-C-3PO-portrait.png",
+    "gender": "N/A",
+    "species": "Droid",
     "weapon": "None",
-    "forceSensative": "False"
+    "forceSensitive": "False",
+    "birthPlanet": "Tatooine",
+    "lsds": "Lightside"
+  },
+  {
+    "name": "BB-8",
+    "picture": "https://wiki.swgoh.help/images/1/1d/Unit-Character-BB-8-portrait.png",
+    "gender": "N/A",
+    "species": "Droid",
+    "weapon": "Welding Torch",
+    "forceSensitive": "False",
+    "birthPlanet": "Hosnian Prime",
+    "lsds": "Lightside"
+  },
+  {
+    "name": "Boba Fett",
+    "picture": "https://wiki.swgoh.help/images/f/ff/Unit-Character-Boba_Fett-portrait.png",
+    "gender": "Male",
+    "species": "Human/Clone",
+    "weapon": "Blaster",
+    "forceSensitive": "False",
+    "birthPlanet": "Kamino",
+    "lsds": "Darkside"
+  },
+  {
+    "name": "Jango Fett",
+    "picture": "https://wiki.swgoh.help/images/d/df/Unit-Character-Jango_Fett-portrait.png",
+    "gender": "Male",
+    "species": "Human",
+    "weapon": "Blaster",
+    "forceSensitive": "False",
+    "birthPlanet": "Concord Dawn",
+    "lsds": "Darkside"
+  },
+  {
+    "name": "General Grievous",
+    "picture": "https://wiki.swgoh.help/images/9/9d/Unit-Character-General_Grievous-portrait.png",
+    "gender": "Male",
+    "species": "Kaleesh",
+    "weapon": "Lightsaber",
+    "forceSensitive": "False",
+    "birthPlanet": "Kalee",
+    "lsds": "Darkside"
+  },
+  {
+    "name": "Bossk",
+    "picture": "https://wiki.swgoh.help/images/1/1d/Unit-Character-Bossk-portrait.png",
+    "gender": "Male",
+    "species": "Trandoshan",
+    "weapon": "Blaster",
+    "forceSensitive": "False",
+    "birthPlanet": "Trandosha",
+    "lsds": "Darkside"
+  },
+  {
+    "name": "Mace Windu",
+    "picture": "https://wiki.swgoh.help/images/6/6f/Unit-Character-Mace_Windu-portrait.png",
+    "gender": "Male",
+    "species": "Human",
+    "weapon": "Lightsaber",
+    "forceSensitive": "True",
+    "birthPlanet": "Haruun Kal",
+    "lsds": "Lightside"
+  },
+  {
+    "name": "Padme Amidala",
+    "picture": "https://wiki.swgoh.help/images/d/d9/Unit-Character-Padm%C3%A9_Amidala-portrait.png",
+    "gender": "Female",
+    "species": "Human",
+    "weapon": "Blaster",
+    "forceSensitive": "False",
+    "birthPlanet": "Naboo",
+    "lsds": "Lightside"
+  },
+  {
+    "name": "Lando Calrissian",
+    "picture": "https://wiki.swgoh.help/images/c/cf/Unit-Character-Young_Lando_Calrissian-portrait.png",
+    "gender": "Male",
+    "species": "Human",
+    "weapon": "Blaster",
+    "forceSensitive": "False",
+    "birthPlanet": "Socorro",
+    "lsds": "Lightside"
   }
+
+  
+
 ]

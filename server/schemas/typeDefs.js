@@ -15,7 +15,9 @@ const typeDefs = gql`
     gender: String
     species: String
     weapon: String
-    forceSensative: String
+    forceSensitive: String
+    birthPlanet: String
+    lsds: String
   }
 
   type Auth {
@@ -39,7 +41,9 @@ const typeDefs = gql`
       gender: String!
       species: String!
       weapon: String!
-      forceSensative: String!
+      forceSensitive: String!
+      birthPlanet: String!
+      lsds: String!
     ): Character
     removeCharacter(charId: ID!): Character
   }

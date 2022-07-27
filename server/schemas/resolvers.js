@@ -43,7 +43,7 @@ const resolvers = {
     },
     addCharacter: async (
       parent,
-      { name, picture, gender, species, weapon, forceSensative }
+      { name, picture, gender, species, weapon, forceSensitive }
     ) => {
       const character = await Character.create({
         name,
@@ -51,7 +51,7 @@ const resolvers = {
         gender,
         species,
         weapon,
-        forceSensative,
+        forceSensitive,
       });
       return character;
     },

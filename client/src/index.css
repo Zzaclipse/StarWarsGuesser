@@ -1,3 +1,7 @@
+:root{
+  font-family: 'Goldman', cursive;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -12,6 +16,10 @@ html {
   /* 2 */
 }
 
+.starwarsfont{
+  font-family: 'Goldman', cursive;
+}
+
 /* Sections
    ========================================================================== */
 /**
@@ -19,6 +27,12 @@ html {
  */
 body {
   margin: 0;
+  background-color: #292929;
+  font-family: 'Goldman', cursive;
+}
+
+.lightsabershadow{
+  box-shadow: 1px 7px 15px red;
 }
 
 /**
@@ -35,6 +49,7 @@ main {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+  font-family: 'Goldman', cursive;
 }
 
 /* Grouping content
@@ -413,6 +428,7 @@ dl {
 
 label {
   display: inline-block;
+  color: yellow
 }
 
 input,
@@ -423,7 +439,7 @@ button {
 }
 
 a {
-  color: #1b89bc;
+  color: yellow;
   text-decoration: none;
 }
 
@@ -899,7 +915,8 @@ a:hover {
 }
 
 .text-light {
-  color: #d9e9e8 !important;
+  color: yellow !important;
+  font-family: 'Goldman', cursive;
 }
 
 .text-dark {
@@ -920,7 +937,7 @@ a:hover {
 
 /* BACKGROUND UTILS */
 .bg-primary {
-  background-color: #2d3e50 !important;
+  background-color: black !important;
 }
 
 .bg-info {
@@ -983,8 +1000,9 @@ a:hover {
   border: 1px solid transparent;
   outline: none;
   color: #1a1a1a;
-  background-color: #aeaeae;
+  background-color: yellow;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  font-family: 'Goldman', cursive;
 }
 
 .btn:hover {
@@ -1039,7 +1057,7 @@ a:hover {
 }
 
 .btn.btn-light {
-  background-color: #d9e9e8;
+  background-color: yellow;
   color: #1a1a1a;
 }
 
@@ -1720,12 +1738,15 @@ table {
   border: 2px solid black;
   width: 800px;
   height: 200px;
+  color: yellow;
 }
   
 th {
   border-bottom: 1px solid black;
+  color: yellow
 }
   
 td {
   text-align: center;
+  color: black
 }
